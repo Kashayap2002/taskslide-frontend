@@ -1,0 +1,120 @@
+/* Task Container */
+.task-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Equal width for both boxes */
+    gap: 20px;
+    margin: 20px 0;
+    align-items: start; /* Align boxes at the top */
+}
+
+/* Task Input and List Boxes */
+.task-input-box, .task-list-box {
+    background: #d9d9c5; /* Light complementary shade for boxes */
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.task-input-box h3, .task-list-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #5a5f38; /* Harmonious darker shade */
+    text-align: center;
+}
+
+/* Input and Button Styling */
+.task-input-box input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #b3b3a0; /* Neutral border color */
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f7f7e6; /* Subtle off-white background for inputs */
+    color: #333; /* Dark text for readability */
+}
+
+.task-input-box button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #6b705c; /* Muted green for the button */
+    color: white; /* White text for contrast */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.task-input-box button:hover {
+    background-color: #5a5f38; /* Darker hover effect */
+}
+
+/* Task List Styling */
+.task-list-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-list-box li {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background: #f7f7e6; /* Light background for tasks */
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #b3b3a0; /* Subtle border */
+    color: #333; /* Dark text for readability */
+}
+
+.task-list-box li:hover {
+    background: #e9e9d4; /* Slightly darker on hover */
+    border-color: #a3a390; /* Complementary border on hover */
+}
+/* Task Actions Styling */
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Done Button */
+.btn-done {
+    background-color: #6b705c; /* Muted green for 'Done' button */
+    color: #fff;
+}
+
+.btn-done:hover {
+    background-color: #5a5f38; /* Darker green on hover */
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #dc3545; /* Red for 'Delete' button */
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Completed Task Tick Mark */
+.task-done {
+    font-size: 1.5rem; /* Increase size for better visibility */
+    color: #4caf50; /* Bright green color for the tick */
+    font-weight: bold; /* Make it bold */
+    margin-left: 10px; /* Add spacing from the task title */
+    display: inline-block;
+    vertical-align: middle; /* Align with text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for a polished look */
+}

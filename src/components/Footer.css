@@ -1,0 +1,24 @@
+/* Footer Style */
+.app-footer {
+    background-color: #6b705c; /* Muted green for harmony with the theme */
+    color: #f9f9f9; /* Light text for contrast */
+    padding: 0px 0px; /* Add padding for better spacing */
+    text-align: center;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.15); /* Slightly darker shadow for depth */
+}
+
+/* Footer Links (if any) */
+.app-footer a {
+    color: #d9d9c5; /* Light complementary color for links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.app-footer a:hover {
+    color: #f9f9f9; /* Change to white on hover */
+}
