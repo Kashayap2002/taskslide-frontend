@@ -159,21 +159,18 @@ The frontend has been deployed on Netlify for free hosting.
 ### Register Page
 Allows users to create an account by entering their username, email, and password.
 
-![Register Page]()
-
----
+![Register Page](https://raw.githubusercontent.com/Kashayap2002/taskslide-frontend/main/Images/RegisterPage.png)
 
 ### Login Page
 Users can log in using their registered email and password.
 
-![Login Page]()
-
----
+![Login Page](https://raw.githubusercontent.com/Kashayap2002/taskslide-frontend/main/Images/LoginPage.png)
 
 ### Task Management Page
 Includes features to add new tasks, view existing tasks, and delete or mark tasks as done.
 
-![Task Management Page]()
+![Task Management Page](https://raw.githubusercontent.com/Kashayap2002/taskslide-frontend/main/Images/Task.png)
+
 
 
 
