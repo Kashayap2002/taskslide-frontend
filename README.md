@@ -171,6 +171,22 @@ Includes features to add new tasks, view existing tasks, and delete or mark task
 
 ![Task Management Page](https://raw.githubusercontent.com/Kashayap2002/taskslide-frontend/main/Images/Task.png)
 
+## Future Enhancements
+
+1. **Error Handling**:
+   - Show detailed error messages for failed operations.
+
+2. **Notifications**:
+   - Notify users of upcoming tasks.
+
+3. **Theme Customization**:
+   - Allow users to change the theme and background.
+
+4. **Mobile Optimization**:
+   - Enhance responsiveness for smaller devices.
+
+
+
 
 
 
