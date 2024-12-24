@@ -69,4 +69,113 @@ frontend/
 ├── package.json          # Project metadata and dependencies
 ├── README.md             # Project documentation
 ```
-## Architecture Overview
+# Architecture Overview
+The **TaskSlide** frontend connects to the backend API to fetch and manipulate data:
+
+## High-Level Workflow
+
+### Frontend (React):
+- Handles the user interface for task management and authentication.
+- Sends HTTP requests to the backend using **Axios**.
+
+### Backend (Node.js + Express):
+- Serves API endpoints for authentication and task management.
+- Handles the business logic and database interactions.
+
+### Database (MySQL):
+- Stores persistent user and task data.
+
+## Architecture Diagram
+```
+Frontend (React)
+   |
+   | HTTP Requests (Axios)
+   ↓
+Backend (Node.js + Express.js)
+   |
+   | SQL Queries (mysql2)
+   ↓
+Database (MySQL)
+```
+## How It Works
+
+### User Authentication:
+- Users can register via the `/api/auth/register` endpoint and login via the `/api/auth/login` endpoint.
+- The JWT token received upon login is stored in `localStorage` and sent with each request for authentication.
+
+### Task Management:
+- Users can add tasks through the `/api/tasks` endpoint.
+- The task list is dynamically fetched and displayed.
+- Tasks can be deleted or marked as done.
+
+---
+
+## Steps to Run Locally
+
+1. **Clone the frontend repository:**
+   ```
+   git clone https://github.com/Kashayap2002/taskslide-frontend.git
+   cd taskslide-frontend
+   ```
+2. **Install Dependencies**
+
+Run the following command to install all necessary dependencies for the frontend:
+
+```bash
+npm install
+```
+3. **Set Up the Backend**
+
+Ensure the backend server is set up and running. Follow the steps in the backend repository's README to start the backend server. The backend repository can be found here:
+[TaskSlide Backend Repository](https://github.com/Kashayap2002/taskslide-backend)
+
+4. **Start the Frontend Development Server**
+
+Run the following command to start the development server locally:
+
+```bash
+npm start
+```
+
+The application will now be accessible at http://localhost:3000.
+
+5. **Test the Application**
+
+- Open the frontend in your browser: [http://localhost:3000](http://localhost:3000).
+- Ensure that the backend API is running.
+- Test the following features:
+  - **Registration**: Create a new account by entering your username, email, and password.
+  - **Login**: Log in with your registered email and password.
+  - **Task Management**: Add new tasks, view your task list, and delete or mark tasks as done.
+
+## Deployment
+
+The frontend has been deployed on Netlify for free hosting.
+
+**URL**: [TaskSlide on Netlify](https://benevolent-duckanoo-8bcfeb.netlify.app/)
+
+## Screenshots
+
+### Register Page
+Allows users to create an account by entering their username, email, and password.
+
+![Register Page]()
+
+---
+
+### Login Page
+Users can log in using their registered email and password.
+
+![Login Page]()
+
+---
+
+### Task Management Page
+Includes features to add new tasks, view existing tasks, and delete or mark tasks as done.
+
+![Task Management Page]()
+
+
+
+
+
