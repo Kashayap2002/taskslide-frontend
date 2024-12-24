@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# TaskSlide Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The **TaskSlide** frontend is designed to provide users with an intuitive interface for managing their tasks efficiently. Built using **React**, the frontend is connected to a backend API for storing, retrieving, and managing tasks in real-time.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+1. **User Authentication:**
+   - Register and login forms with JWT-based token handling.
+   - Secure session management using `localStorage`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Task Management:**
+   - Add tasks with a title and scheduled time.
+   - View tasks in order of their scheduled time.
+   - Mark tasks as done or delete tasks easily.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Responsive Design:**
+   - User-friendly layout with a responsive design for optimal user experience.
 
-### `npm test`
+4. **Visual Enhancement:**
+   - Background image to enhance the user experience.
+   - Clear and modern UI with minimal distractions.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **React**: The core library for building the user interface.
+2. **CSS**: For styling components and creating a visually appealing interface.
+3. **Axios**: For making HTTP requests to the backend.
+4. **LocalStorage**: For persisting user session data like tokens.
+5. **React Hooks**: For managing component state and side effects.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Why These Technologies?
 
-### `npm run eject`
+1. **React**: 
+   - Easy to build reusable components.
+   - Efficient rendering with the virtual DOM.
+   - Rich ecosystem for frontend development.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Axios**: 
+   - Simple to use for making HTTP requests.
+   - Provides a clean way to handle API interactions with the backend.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **CSS**:
+   - Provides flexibility in designing modern and responsive layouts.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Folder Structure
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+frontend/
+├── public/               # Static assets
+├── src/                  # Application source code
+│   ├── components/       # Reusable components
+│   │   ├── AuthForm.css  # Styles for authentication forms
+│   │   ├── Footer.js     # Footer component
+│   │   ├── Header.js     # Header component
+│   │   ├── LoginForm.js  # Login form component
+│   │   ├── RegisterForm.js # Register form component
+│   │   ├── TaskList.js   # Task list component
+│   │   ├── TaskList.css  # Styles for task list
+│   ├── App.js            # Main application entry point
+│   ├── App.css           # Global styles
+├── package.json          # Project metadata and dependencies
+├── README.md             # Project documentation
+```
+## Architecture Overview
