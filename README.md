@@ -3,6 +3,23 @@
 The **TaskSlide** frontend is designed to provide users with an intuitive interface for managing their tasks efficiently. Built using **React**, the frontend is connected to a backend API for storing, retrieving, and managing tasks in real-time.
 
 ---
+## Table of Contents
+
+1. [Features](#features)
+2. [Technologies Used](#technologies-used)
+3. [Why These Technologies?](#why-these-technologies)
+4. [Folder Structure](#folder-structure)
+5. [Architecture Overview](#architecture-overview)
+   - [High-Level Workflow](#high-level-workflow)
+   - [Architecture Diagram](#architecture-diagram)
+6. [How It Works](#how-it-works)
+   - [User Authentication](#user-authentication)
+   - [Task Management](#task-management)
+7. [Steps to Run Locally](#steps-to-run-locally)
+8. [Deployment](#deployment)
+9. [Screenshots](#screenshots)
+10. [Future Enhancements](#future-enhancements)
+11. [Related Links](#related-links)
 
 ## Features
 
@@ -186,7 +203,9 @@ Includes features to add new tasks, view existing tasks, and delete or mark task
    - Enhance responsiveness for smaller devices.
 
 
+## Related Links
 
+- [TaskSlide Backend Repository](https://github.com/Kashayap2002/taskslide-backend)
 
 
 
